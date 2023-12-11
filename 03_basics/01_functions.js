@@ -78,11 +78,27 @@ function loginUserMessage(username = "sam"){
 // console.log(loginUserMessage())// o/p - undefined just logged in
 
 
-function calculateCartPrice(val1, val2, ...num1){
+function calculateCartPrice(val1){
     return num1
 }
 
 // console.log(calculateCartPrice(200, 400, 500, 2000))
+// o/p 200 
+
+// function calculateCartPrice( ...num1){
+//     return num1
+// }
+
+// console.log(calculateCartPrice(200, 400, 500, 2000))
+//o/p [ 200, 400, 500, 2000 ]
+function calculateCartPrice(val1, val2, ...num1)
+{
+    return num1
+}
+
+console.log(calculateCartPrice(200, 400, 500, 2000))
+//o/p [ 500, 2000 ] kyunki 200 aur 400 val1 aur val2 mein chali gayi 
+
 
 const user = {
     username: "hitesh",
