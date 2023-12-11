@@ -79,11 +79,11 @@ const course = {
 
 // course.courseInstructor//ye less use hota hai isse code thoda messy ho jata hai
 
-// const {courseInstructor} = course//o/p abhay another method 
-// const {courseInstructor: instructor} = course// o/p abhay but iss method se courseInstructor ka naam change hokar instructor ho gaya hai
+const {courseInstructor} = course//o/p abhay another method 
+const {courseInstructor: instructor} = course// o/p abhay but iss method se courseInstructor ka naam change hokar instructor ho gaya hai
 
-// console.log(courseInstructor);
-// console.log(instructor);
+console.log(courseInstructor);
+console.log(instructor);
 
 // {
 //     "name": "abhay",
