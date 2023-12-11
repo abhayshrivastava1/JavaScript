@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku Game</title>
+    <style>
+        /* ... (styles remain unchanged) ... */
+    </style>
+</head>
+<body>
+
+<div>
+    <div id="sudoku-board"></div>
+    <button class="btn" onclick="solveSudoku()">Solve Sudoku</button>
+</div>
+
+<script>
+    // Example empty Sudoku board
+    const emptyBoard = [
+        [0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0],
+    ];
+
+    function generateBoard() {
+        const sudokuBoard = document.getElementById('sudoku-board');
+
+        emptyBoard.forEach((row, rowIndex) => {
+            row.forEach((value, colIndex) => {
+                const cell = document.createElement('div');
+                cell.classList.add('cell');
+                const input = document.createElement('input');
+                input.type = 'text';
+                input.maxLength = 1;
+                input.addEventListener('input', onInputChange);
+                cell.appendChild(input);
+                sudokuBoard.appendChild(cell);
+            });
+        });
+    }
+
+    function onInputChange(event) {
+        const inputValue = event.target.value;
+        if (!/^[1-9]$/.test(inputValue)) {
+            event.target.value = '';
+        }
+    }
+
+    function solveSudoku() {
+        const board = getBoardValues();
+        if (solve(board)) {
+            updateBoard(board);
+            alert('Sudoku solved successfully!');
+        } else {
+            alert('Unable to solve Sudoku. Please check your input.');
+        }
+    }
+
+    // ... (solveSudoku function and helper functions remain unchanged) ...
+
+    // Initialize the board on page load
+    generateBoard();
+</script>
+
+</body>
+</html>
