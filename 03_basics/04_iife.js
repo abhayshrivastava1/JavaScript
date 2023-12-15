@@ -1,54 +1,36 @@
-const user = {
-    username: "hitesh",
-    price: 999,
+// Immediatly Invoked Function Expression
 
-    welcomeMessage: function() {
-        console.log(`${this.username} , welcome to website`);
-        console.log(this);
-    }
-
-}
-
-// user.welcomeMessage()
-// user.username = "sam"
-// user.welcomeMessage()
-
-// console.log(this);
+// iife ka use isliye karte hai jisse humara function kisi bahar vale global scope ke karan kharab naa ho jaaye 
+// aur jab ye ()paranthesis laga dete hai toh ek block ban ata hai jisse ye global scope ke karan pollute nhi hota (just like in last lecture)
 
 // function chai(){
-//     let username = "hitesh"
-//     console.log(this.username);
-// }
-
-// chai()
-
-// const chai = function () {
-//     let username = "hitesh"
-//     console.log(this.username);
-// }
-
-const chai =  () => {
-    let username = "hitesh"
-    console.log(this);
-}
+//     console.log('DB connected');
+// }() // o/p unecpected token ()
 
 
-// chai()
-
-// const addTwo = (num1, num2) => {
-//     return num1 + num2
-// }
-
-// const addTwo = (num1, num2) =>  num1 + num2
-
-// const addTwo = (num1, num2) => ( num1 + num2 )
-
-const addTwo = (num1, num2) => ({username: "hitesh"})
+// (function chai(){
+//     console.log('DB connected');
+// })() // o/p DB connected
 
 
-console.log(addTwo(3, 4))
+// (function chai(){
+//     console.log('DB connected');
+// })() // o/p DB connected
 
+// (function chai(){
+//     console.log('DB connected');
+// })() //o/p (intermediate value)(...) is not a function 
+// yahan par iffe ko nahi pata ki context rokna kahan par hai javascript mein humme uss line ko end karna padta hai
 
-// const myArray = [2, 5, 3, 7, 8]
+(function chai(){
+    console.log('DB connected');
+})()
 
-// myArray.forEach()
+(function chai(){
+    console.log('DB connected');
+})(); // o/p DB connected
+
+(function chai(){
+    console.log('DB connected');
+})() //o/p // o/p DB connected
+

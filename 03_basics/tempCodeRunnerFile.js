@@ -1,5 +1,4 @@
- calculateCartPrice(val1, val2, ...num1){
-    return num1
+i =  () => {
+    let username = "hitesh"
+    console.log(this);
 }
-
-console.log(ca
