@@ -22,15 +22,27 @@
 // })() //o/p (intermediate value)(...) is not a function 
 // yahan par iffe ko nahi pata ki context rokna kahan par hai javascript mein humme uss line ko end karna padta hai
 
-(function chai(){
-    console.log('DB connected');
-})()
+// (function chai(){
+//     console.log('DB connected');
+// })() // o/p DB connected
 
-(function chai(){
-    console.log('DB connected');
-})(); // o/p DB connected
+// (function chai(){
+    //named iife
+//     console.log('DB connected');
+// })(); // o/p DB connected
 
-(function chai(){
+( () => {
     console.log('DB connected');
-})() //o/p // o/p DB connected
+})(); //o/p // o/p DB connected 
+// // agar upar semicolon(;) nahi lagayenge toh error aayegi - (intermediate value)(...) is not a function 
+
+
+
+( (name) => {
+    console.log(`DB connected ${name}`);
+} )('abhay')
+
+
+
+
 

@@ -1,4 +1,3 @@
-i =  () => {
-    let username = "hitesh"
-    console.log(this);
-}
+=> {
+//     console.log('DB connected ${name}');
+// })('abhay')
