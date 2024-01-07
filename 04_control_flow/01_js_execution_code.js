@@ -34,6 +34,3 @@ let result2 = addnum(10,2)
 // addnum - defination
 // result1 - undefined
 // result2 - undefined
-
-
-
