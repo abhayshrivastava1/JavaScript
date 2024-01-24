@@ -1,0 +1,14 @@
+Javascript is a 
+
+1 synchronus - (line by line coe=de execute hoga) (default)
+2 single threaded - (ek hi thread par sab kuch execute hoga, but js always runs in a runtime environment whether of node or browser) (default)
+
+Execution Context - execute one line of code at a time (each operation waits for the last one to complete before executing)
+
+Blocking Code -> Block the flow of program -> Read file sync 
+used during data entry  
+
+Non Blocking Code -> Does not block execution -> Read file async 
+can be used when we can do multiple work at a single time
+
+Both methods have their own use cases
