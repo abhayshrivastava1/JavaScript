@@ -1,0 +1,2 @@
+// read fetch from mdn 
+// this blog too https://www.bing.com/ck/a?!&&p=da447eaffc822f3cJmltdHM9MTcwNzA5MTIwMCZpZ3VpZD0zMjllNTY2OS0yYzVlLTYxZmEtMzIzMy00NTY4MmRhYzYwZDMmaW5zaWQ9NTI1OQ&ptn=3&ver=2&hsh=3&fclid=329e5669-2c5e-61fa-3233-45682dac60d3&psq=fetch+in+nodejs&u=a1aHR0cHM6Ly9ibG9nLmxvZ3JvY2tldC5jb20vZmV0Y2gtYXBpLW5vZGUtanMv&ntb=1
