@@ -52,3 +52,40 @@ console.log(ab1.encryptPassword()); // o/p 123456abc
 
 console.log(ab1.changeUsername()); // o/p CHAI
 
+
+
+// class ClassName {
+//     constructor(parameters) {
+//       // Constructor function for initializing objects
+//       this.property1 = value1;
+//       this.property2 = value2;
+//       // ...
+//     }
+  
+//     // Methods
+//     methodName1() {
+//       // Method definition
+//     }
+  
+//     methodName2() {
+//       // Method definition
+//     }
+  
+//     // Static methods
+//     static staticMethodName() {
+//       // Static method definition
+//     }
+//   }
+//   Let's break down the components:
+  
+//   class keyword: It's used to define a new class.
+  
+//   ClassName: This is the name of your class.
+  
+//   constructor(): This method is a special method for creating and initializing objects created with a class. It's called automatically when an instance of the class is created.
+  
+//   this: Within the constructor and methods of the class, this refers to the current instance of the class. You use it to access properties and methods of the current object.
+  
+//   methods: These are functions defined within the class. They define behaviors associated with the class.
+  
+//   static: This keyword defines a static method for the class. Static methods are called on the class itself rather than on instances of the class.
