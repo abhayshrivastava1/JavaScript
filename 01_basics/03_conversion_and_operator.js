@@ -19,7 +19,7 @@ let booleanIsLoggedIn = Boolean(isLoggedIn)
 let booleanIsLoggedIn1 = Boolean(isLoggedIn1)
 console.log(booleanIsLoggedIn); // o/p true kyunki agar string mein koi value hogi toh vo true consider ki jayegi
 
-console.log(booleanIsLoggedIn1)// o/p true kyunki agar string mein koi value nahi hogi toh vo false consider ki jayegi
+console.log(booleanIsLoggedIn1)// o/p fale kyunki agar string mein koi value nahi hogi toh vo false consider ki jayegi
 
 // 1 => true; 0 => false
 // "" => false
@@ -69,7 +69,7 @@ num1 = num2 = num3 = 2 + 2
 
 let gameCounter = 100
 ++gameCounter;
-// console.log(gameCounter); // o/p 101
+console.log(gameCounter); // o/p 101
 
 // link to study
 // https://tc39.es/ecma262/multipage/abstract-operations.html#sec-type-conversion
