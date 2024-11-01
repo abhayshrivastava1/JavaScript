@@ -20,22 +20,26 @@ console.log(name + repoCount + ' Value');// >> o/p abhay50 value
 
 const gameName = new String('abhay-as-com')// another way of initialize a string
 console.log(typeof(gameName))// object 
-// here string is object not a array
+// here string is object not a array because when we use the new String() constructor, you create a String object
 
 // console.log(gameName[0]);// yahar par string as key value pair store hui hai 
 // o - a, 1 - b, 2 - h, and so on...
 
-// console.log(gameName.__proto__);// o/p {}  to access prototype
+console.log(gameName.__proto__);// o/p {}  to access prototype
 //humme baar baar ye proto likhne ki jarurat nahi hai kuch access karne ke liye
 
-// console.log(gameName.__proto__.length);// >> 0
-console.log(gameName.length);// >> 12 
-//pata nahi answer kyu alag aa raha hai
+console.log(gameName.__proto__.length);// >> 0
+//Here, __proto__ refers to the prototype of the String object. The prototype of String does not have a length property, which is why it returns 0.
 
-console.log(gameName.__proto__.toUpperCase());//
-console.log(gameName.toUpperCase());// 
-// yahan par original string change nhi hui hai
-//isme bhi proto aur aur uski agli line ka asnswer alag hai idk??
+console.log(gameName.length);// >> 12 
+//This accesses the length property of the actual String object gameName, which correctly returns 12, the number of characters in the string "abhay-as-com".
+
+
+console.log(gameName.__proto__.toUpperCase());// Here nothing gets print
+//This attempts to call toUpperCase() on the prototype of the String object, not on an actual string instance. Since the prototype itself does not hold a string value, it doesn’t make sense in this context. Thus, it won’t return a valid output.
+
+console.log(gameName.toUpperCase());// ABHAY-AS-COM
+//This correctly calls the toUpperCase() method on the gameName String object, returning a new string "ABHAY-AS-COM". Importantly, this does not modify the original gameName string because strings are immutable in JavaScript.
 
 
 // console.log(gameName.toLowerCase());
@@ -48,14 +52,14 @@ console.log(gameName.toUpperCase());//
 
 
 // const newString = gameName.substring(0, 4)
-// console.log(newString);
+// console.log(newString); // abha
 
-// const anotherString = gameName.slice(-8, 4)
-// console.log(anotherString);
+const anotherString = gameName.slice(-8, 4);
+console.log(anotherString);// Nothing is printed
 
-// const newStringOne = "   abhay    "
-// console.log(newStringOne);
-// console.log(newStringOne.trim());
+const newStringOne = "   abhay    "
+console.log(newStringOne);
+console.log(newStringOne.trim());
 
 // const url = "https://abhay.com/abhay%20shrivastava"
 
@@ -65,26 +69,33 @@ console.log(gameName.toUpperCase());//
 //to find whether string contains this substring or not
 
 
-const browserType = "mozilla";
-
-if (browserType.startsWith("zilla")) {
-  console.log("Found zilla!");
-} else {
-  console.log("No zilla here!");
-}
-
-
 // const browserType = "mozilla";
+
+// if (browserType.startsWith("zilla")) {
+//   console.log("Found zilla!");
+// } else {
+//   console.log("No zilla here!");
+// }
+// No zilla here!
+
+
+const browserType = "mozilla";
 
 // if (browserType.endsWith("zilla")) {
 //   console.log("Found zilla!");
 // } else {
 //   console.log("No zilla here!");
 // }
+// Found zilla!
 
-// console.log(gameName.split('-'));
+// console.log(gameName.split('-'));// [ 'abhay', 'as', 'com' ]
 
-
+// console.log(gameName.split('')); 
+//[
+  // 'a', 'b', 'h', 'a',
+  // 'y', '-', 'a', 's',
+  // '-', 'c', 'o', 'm'
+// ]
 
 
 //  h/w read and perform all string operation of mdn
