@@ -1,5 +1,6 @@
 // const tinderUser = new Object()// singleton object
-const tinderUser = {}// non singleton object rest is same
+const tinderUser = {} // non singleton object rest is same
+
 
 tinderUser.id = "123abc"
 tinderUser.name = "Sammy"
@@ -60,11 +61,11 @@ users[1].email
 // console.log(tinderUser);
 
 // console.log(Object.keys(tinderUser));// iss method se saari keys nikal kar unhe ek array mein store kar sakte hai 
-// console.log(Object.values(tinderUser));//iss method se saari values nikal kar unhe ek array mein store kar sakte hai 
-// console.log(Object.entries(tinderUser));//iss method se saari key-value pair nikal kar unhe alag alag array mein store kar sakte hai 
+console.log(Object.values(tinderUser));//iss method se saari values nikal kar unhe ek array mein store kar sakte hai 
+console.log(Object.entries(tinderUser));// o/p [ [ 'id', '123abc' ], [ 'name', 'Sammy' ], [ 'isLoggedIn', false ] ]
+//iss method se saari key-value pair nikal kar unhe alag alag array mein store kar sakte hai 
 
-// console.log(tinderUser.hasOwnProperty('isLoggedIn'));//to chek whether the object has this property or not
-
+// console.log(tinderUser.hasOwnProperty('isLoggedIn'));//to check whether the object has this property or not
 
 
 
@@ -79,8 +80,14 @@ const course = {
 
 // course.courseInstructor//ye less use hota hai isse code thoda messy ho jata hai
 
-const {courseInstructor} = course//o/p abhay another method 
+const {courseInstructor} = course//o/p abhay 
+//{ courseInstructor } = course से courseInstructor नाम का एक नया variable create होता है जो "Abhay" को refer करता है।
+
 const {courseInstructor: instructor} = course// o/p abhay but iss method se courseInstructor ka naam change hokar instructor ho gaya hai
+//{ courseInstructor: instructor } = course से instructor नाम का एक नया variable बनता है जो "Abhay" को refer करता है। 
+
+// Variable नाम बदलने से memory address में बदलाव नहीं आता, बस उस address को access करने का तरीका बदल जाता है।
+
 
 console.log(courseInstructor);
 console.log(instructor);

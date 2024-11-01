@@ -11,7 +11,10 @@ const myHeors = ["shaktiman", "naagraj"]
 
 const myArr2 = new Array(1, 2, 3, 4)
 // console.log(myArr[1]); zero based indexing is present
-// During copying array is js make shallow copy (call by refrence type)
+// During copying array in js make shallow copy (call by refrence type)
+
+// new Array() के साथ बनाने की जरूरत खासतौर पर तब पड़ती है जब array का initial size specify करना हो, जैसे:
+// const myArr3 = new Array(5); // यह एक empty array बनाएगा जिसकी length 5 होगी।
 
 // Array methods
 
@@ -25,15 +28,15 @@ const myArr2 = new Array(1, 2, 3, 4)
 // console.log(myArr.includes(9));// gives either true or false if element present -> true else false
 // console.log(myArr.indexOf(3));if element not present -> -1 if present -> jahan par bhi element hoga
 
-// const newArr = myArr.join()//array ko join karke string mein convert kar deta hai
+const newArr = myArr.join()//array ko join karke string mein convert kar deta hai
 
-// console.log(myArr);
-// console.log( newArr);
+console.log(myArr);
+console.log( newArr);
 
 
 // slice, splice
 
-console.log("A ", myArr);
+console.log("A", myArr);
 
 const myn1 = myArr.slice(1, 3)//Returns a copy of a section of an array jisme last end limit excluded hai 
 //isme original array mein koi change nahi hota hai 

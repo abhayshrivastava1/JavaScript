@@ -1,9 +1,9 @@
 const marvel_heros = ["thor", "Ironman", "spiderman"]
 const dc_heros = ["superman", "flash", "batman"]
 
-// marvel_heros.push(dc_heros)//ismr dc_heros array as a element marvel_heros vali array mein insert ho jayegi
+marvel_heros.push(dc_heros)//ismr dc_heros array as a element marvel_heros vali array mein insert ho jayegi
 
-// console.log(marvel_heros);[, , ,[, , ,]]
+// console.log(marvel_heros); //[, , ,[, , ,]]
 // console.log(marvel_heros[3][1]);// o/p flash
 
 // const allHeros = marvel_heros.concat(dc_heros)// concat mein ek variable bhi dena hota hai jisme new array store hogi
