@@ -16,14 +16,14 @@
 // in browser it gives windows object 
 // and in node it gives empty object {}
 
-let val1 = 10
-let val2 = 5
-function addnum(num1,num2){
-    let total = num1 + num2
-    return total
-}
-let result1 = addnum(val1,val2)
-let result2 = addnum(10,2)
+let val1 = 10  // line 1
+let val2 = 5  // line 2
+function addnum(num1,num2){   // line 3
+    let total = num1 + num2  // line 4
+    return total            // line 5
+}                          // line 6 
+let result1 = addnum(val1,val2)    // line 7
+let result2 = addnum(10,2)        // line 8
 
 
 // Steps of Execution of a program
