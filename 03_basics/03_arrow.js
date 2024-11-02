@@ -15,8 +15,8 @@ const user = {
 // user.username = "sam"
 // user.welcomeMessage()// o/p sam , welcome to website
 
-// console.log(this);// o/p in node {} (an empty object)
-// o/p in console(browser) window object kyunki browser mein window object ek global object 
+// console.log(this);// o/p in node, {} (an empty object)
+// o/p in console(browser), window object kyunki browser mein window object ek global object hai
 
 // function chai(){
 //     let username = "abhay"
@@ -62,6 +62,19 @@ const chai =  () => { // function likhne ki jagah agar aise => ka sign banaye to
 // console.log(addTwo(3, 4))
 
 
-// const myArray = [2, 5, 3, 7, 8]
+// const myArray = [2, 5, 3, 7, 8];
 
-// myArray.forEach()
+// console.log(myArray.forEach()); // o/p undefined is not a function
+//The forEach() method in JavaScript expects a callback function as an argument, which will be executed for each element in the array. In your code, you’re trying to use forEach() without passing any function, which will lead to an error.
+
+const myArray = [2, 5, 3, 7, 8];
+
+myArray.forEach((element) => {
+  console.log(element);
+});
+// o/p 
+// 2
+// 5
+// 3
+// 7
+// 8
