@@ -9,10 +9,10 @@ console.log(3
 // upar vali tarike se likh toh sakte hai par itne gande tarike se likhna hi kyu hai
 console.log(3+3)
 
-console.log("Hitesh")
+console.log("Abhay")
 
 
-let name = "hitesh"
+let name = "abhay"
 let age = 18
 let isLoggedIn = false
 let state;

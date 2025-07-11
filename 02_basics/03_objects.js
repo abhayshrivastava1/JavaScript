@@ -1,10 +1,12 @@
-//object can be declared tow types :-
+//object can be declared two types :-
+
 // (1)literal:- Literal Syntax se: Directly curly braces { } ke saath object banate hain.
 // (2)constructor:- new keyword ke saath Object() ya custom constructor function ke use se.
 
 // singleton means kisi bhi constructor se hum object banate hai toh ye apne tarah ka ek hi object hai
 
-// Object.create // ek method hai jo humein ek naye object banane ki facility deta hai, par wo naye object ko ek existing object ko as prototype use karke banata hai.
+// Object.create 
+// ek method hai jo humein ek naye object banane ki facility deta hai, par wo naye object ko ek existing object ko as prototype use karke banata hai.
 
 // object literals
 

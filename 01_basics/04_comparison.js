@@ -18,10 +18,12 @@ console.log(false >= 0);// >> true
 // == equality operator worked different from >< <= >= comparison operator comparison converts null to a number treating it as 0
 // thats why (3) is true while (1) is false
 
+
 // console.log(undefined == 0); // false
 // console.log(undefined > 0); // false
 // console.log(undefined < 0); // false
 // result hamesha false hi aayega
+
 
 // Different datatype comparison normally nhi karni chahiye these are not clean code
 
@@ -30,3 +32,4 @@ console.log(false >= 0);// >> true
 
 // console.log("2" === 2);// >> false
 // kyunki ye datatype bhi check karta hai
+

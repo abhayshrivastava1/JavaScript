@@ -1,7 +1,7 @@
 const marvel_heros = ["thor", "Ironman", "spiderman"]
 const dc_heros = ["superman", "flash", "batman"]
 
-marvel_heros.push(dc_heros)//ismr dc_heros array as a element marvel_heros vali array mein insert ho jayegi
+// marvel_heros.push(dc_heros)//ismr dc_heros array as a element marvel_heros vali array mein insert ho jayegi
 
 // console.log(marvel_heros); //[, , ,[, , ,]]
 // console.log(marvel_heros[3][1]);// o/p flash
@@ -12,7 +12,7 @@ marvel_heros.push(dc_heros)//ismr dc_heros array as a element marvel_heros vali 
 const all_new_heros = [...marvel_heros, ...dc_heros]// ...spread operator it spreads all the elements of array isme jitni chahe utni arrays add kar sakte hai
 // ab vo array nahi raha ab uska har ek element indivdual ho gaya hai aur comma( , ) use karke humne saare individual elemnts ko jod diya hai 
 
-// console.log(all_new_heros);
+console.log(all_new_heros);
 
 const another_array = [1, 2, 3, [4, 5, 6], 7, [6, 7, [4, 5]]]
 

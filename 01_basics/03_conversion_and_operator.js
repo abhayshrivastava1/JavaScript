@@ -19,7 +19,7 @@ let booleanIsLoggedIn = Boolean(isLoggedIn)
 let booleanIsLoggedIn1 = Boolean(isLoggedIn1)
 console.log(booleanIsLoggedIn); // o/p true kyunki agar string mein koi value hogi toh vo true consider ki jayegi
 
-console.log(booleanIsLoggedIn1)// o/p fale kyunki agar string mein koi value nahi hogi toh vo false consider ki jayegi
+console.log(booleanIsLoggedIn1)// o/p false kyunki agar string mein koi value nahi hogi toh vo false consider ki jayegi
 
 // 1 => true; 0 => false
 // "" => false
@@ -35,7 +35,7 @@ let stringNumber = String(someNumber)// ab ye number string mein convert ho gaya
 
 let value = 3
 let negValue = -value
-console.log(negValue);
+console.log(negValue);// -3
 
 // console.log(2+2);
 // console.log(2-2);
