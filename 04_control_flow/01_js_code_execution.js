@@ -144,7 +144,7 @@ let result2 = addnum(10,2)        // line 8
      │ num1 → undefined           │                            │
      │ num2 → undefined           │                            │
      │ total → undefined          │                            │
-     └────────────┬──────────────┘                             │
+     └────────────┬───────────────┘                            │
                   ▼                                            │
      ┌────────────────────────────┐                            │
      │ Execution Phase of addnum()│                            │

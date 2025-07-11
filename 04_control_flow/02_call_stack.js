@@ -21,8 +21,6 @@
 
 
 
-
-
 function one(){
     console.log("one");
     two()
@@ -78,3 +76,17 @@ two()
 // two
 // three
 // three
+
+/*
+
+Conclusion:
+
+Har baar jab function call hota hai, wo Call Stack me push hota hai.
+
+Jab function ka kaam khatam ho jata hai, wo stack se pop ho jata hai.
+
+Functions ke andar agar koi aur function call hota hai, to nested stack banta hai.
+
+Is flow se hum JS ka real execution flow samajh paate hain.
+
+*/
