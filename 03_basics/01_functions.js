@@ -91,6 +91,8 @@ function calculateCartPrice(val1){
 
 // console.log(calculateCartPrice(200, 400, 500, 2000))
 //o/p [ 200, 400, 500, 2000 ]
+
+
 function calculateCartPrice(val1, val2, ...num1)
 {
     return num1
@@ -101,13 +103,14 @@ console.log(calculateCartPrice(200, 400, 500, 2000))
 
 
 const user = {
-    username: "hitesh",
+    username: "abhay",
     prices: 199
 }
 
 function handleObject(anyobject){
-    console.log(`Username is ${anyobject.username} and price is ${anyobject.price}`);
+    console.log(`Username is ${anyobject.username} and price is ${anyobject.price}`); // o/p Username is sam and price is 399
 }
+// aur isne ye values niche define kiye huye function se uthayi hai 
 
 // handleObject(user)
 handleObject({
@@ -122,4 +125,4 @@ function returnSecondValue(getArray){
 }
 
 // console.log(returnSecondValue(myNewArray));
-console.log(returnSecondValue([200, 400, 500, 1000]));
+console.log(returnSecondValue([200, 400, 500, 1000])); // o/p 400

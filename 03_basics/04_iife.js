@@ -1,7 +1,8 @@
 // Immediatly Invoked Function Expression
 
 // iife ka use isliye karte hai jisse humara function kisi bahar vale global scope ke karan kharab naa ho jaaye 
-// aur jab ye ()paranthesis laga dete hai toh ek block ban ata hai jisse ye global scope ke karan pollute nhi hota (just like in last lecture)
+// aur jab ye () paranthesis laga dete hai toh ek block ban ata hai jisse ye global scope ke karan pollute nhi hota (just like in last lecture)
+
 
 // function chai(){
 //     console.log('DB connected');

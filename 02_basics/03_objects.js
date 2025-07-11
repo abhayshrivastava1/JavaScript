@@ -56,11 +56,17 @@ JsUser.greetingTwo = function(){
   //In JavaScript, when you want to include variables or expressions within a string, you need to use template literals (backticks `), not regular quotes (' or "). Template literals allow you to embed expressions inside strings using ${...} syntax.
 }
 
-console.log(JsUser.greeting);// o/p [Function (anonymous)] function execute nhi hua hai bs uska ek refrence aaya hai
+console.log(JsUser.greeting);
+// o/p [Function (anonymous)] 
+// function execute nhi hua hai bs uska ek refrence aaya hai
 
-console.log(JsUser.greeting());// Hello JS user
+console.log(JsUser.greeting());
+// Hello JS user
+// undefined
 
-console.log(JsUser.greetingTwo());//Hello JS user, Abhay
+console.log(JsUser.greetingTwo());
+// Hello JS user, Abhay
+// undefined
 
 // Functions greeting और greetingTwo दोनों ही console.log() के अंदर call किए गए हैं, और दोनों functions कुछ return नहीं कर रहे, इसलिए उनकी call का result undefined आता है।
 

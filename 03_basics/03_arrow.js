@@ -4,10 +4,17 @@ const user = {
 
     welcomeMessage: function() {
         console.log(`${this.username} , welcome to website`);// current context ko refer karne ke liye this keyword use karte hai yahan par user() function current context hai 
-        // console.log(this);
+        console.log(this);
+        // o/p {
+        //   username: 'abhay',
+        //   price: 999,
+        //   welcomeMessage: [Function: welcomeMessage]
+        // }
     }
 
 }
+
+user.welcomeMessage(); 
 
 // context matlab simple values yani values jo aapke variables hold kar rahe hai (matlab kiske baare mein baat ho rahi hai)
 
